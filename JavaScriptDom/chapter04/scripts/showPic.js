@@ -33,3 +33,11 @@ function prepareLinks() {
 function popUp(winURL) {
     window.open(winURL, "popup", "width=320, height=480");
 }
+
+function prepareGallery() {
+    if (!document.getElementsByTagName) return false;
+    if (!document.getElementById) return false;
+    if (!document.getElementById("imagegallery")) return false;
+    var gallery = document.getElementById("imagegallery");
+    var links = gallery.getElementsByTagName('a');
+}
